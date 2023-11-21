@@ -1,8 +1,9 @@
+mod guessing_game;
 
-mod fizzbuzz;
+use crate::guessing_game::guess_the_number;
 
 fn main() {
     println!("Hello, world!");
 
-    fizzbuzz::fizz_buzz(100);
+    guess_the_number();
 }
