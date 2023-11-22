@@ -1,9 +1,7 @@
-mod guessing_game;
+mod hangman;
 
-use crate::guessing_game::guess_the_number;
+use crate::hangman::play_hangman;
 
 fn main() {
-    println!("Hello, world!");
-
-    guess_the_number();
+    play_hangman("lines_of_words.txt");
 }
