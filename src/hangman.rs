@@ -14,7 +14,7 @@ pub fn play_hangman(file_path: &'static str) {
             println!("Sadge");
         }
 
-        print!("Play again? (y/N)");
+        print!("Play again? (y/N) ");
         let _ = stdout().flush();
 
         let ch = read_char();
@@ -49,6 +49,7 @@ fn play_hangman_round(word: String, tracker: i32, attempts: i32) -> bool {
     if expected == updated_tracker {
         true
     } else if attempts == 7 {
+        println!("The word was: {}", word);
         false
     } else {
         let cur_attempts = if updated_tracker == tracker { attempts + 1 } else { attempts };
