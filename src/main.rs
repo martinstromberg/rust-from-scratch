@@ -1,4 +1,5 @@
-mod hangman;
+pub mod hangman;
+pub mod blackjack;
 
 use crate::hangman::play_hangman;
 
